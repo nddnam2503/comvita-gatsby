@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 61.8vh;
+  max-height: 400px;
+  background: url('https://www.comvita.co.nz/_assets/product_images/UK/banners/02849%20UK_Web_Header_1440x398_02_honey.jpg');
+  font-size: 2em;
+  overflow: hidden;
+}
+
+
+.textSlogan {
+  color: white;
+  text-shadow: 2px 2px 12px #382f2d;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: inline-block;
+  font-size: 60px;
+  text-transform: capitalize;
+}
