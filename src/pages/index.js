@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class RootIndex extends React.Component {
   render() {
-    console.log(get(this, 'props.data'));
     const banners = get(this, 'props.data.allContentfulBanner.edges')
 
     return (

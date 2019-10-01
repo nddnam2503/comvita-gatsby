@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
@@ -8,14 +8,9 @@ import ArticlePreview from '../components/article-preview'
 
 class BlogIndex extends React.Component {
   render() {
-    console.log(get(this, 'props.data'));
-
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const banners = get(this, 'props.data.allContentfulBanner.edges')
-    console.log(banners);
-    console.log(posts);
-
+    
     return (
       <Layout location={this.props.location} >
         <div style={{ background: '#fef9f0' }}>

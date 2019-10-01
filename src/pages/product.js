@@ -8,8 +8,6 @@ import ProductPreview from '../components/product-preview'
 class ProductIndex extends React.Component {
   render() {
     const products = get(this, 'props.data.allContentfulProduct.edges')
-    console.log(products);
-
     return (
       <Layout location={this.props.location} >
         <div style={{ background: '#fef9f0' }}>
@@ -52,7 +50,7 @@ export const pageQuery = graphql`
           oldPrice
           type
           image {
-            fluid(width: 350, height: 350, resizingBehavior: SCALE) {
+            fluid(maxWidth: 350, maxHeight: 350, resizingBehavior: SCALE) {
             ...GatsbyContentfulFluid_tracedSVG
             }
           }

@@ -11,7 +11,7 @@ let singleProductClass = [
 ]
 singleProductClass = singleProductClass.join(' ')
 
-function formatNumber(number, numberOfDigits = 2) {
+function formatNumber(number) {
     try {
         return parseFloat(Math.round(number * 100) / 100).toFixed(2);
     } catch (error) {
